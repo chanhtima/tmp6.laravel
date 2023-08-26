@@ -1,0 +1,15 @@
+header{
+    @apply !fixed top-[40px] left-0 right-0 !z-[9] shadow-md bg-white;
+    &+*{
+        @apply mt-[72px] xl:mt-[76px]
+    }
+}
+.la-header-01-basic{
+  
+    .navbar{
+        @apply justify-between py-3 px-2 sm:px-4
+    }
+}
+.header-logo{
+    @apply w-[90px] xl:w-[110px]
+}

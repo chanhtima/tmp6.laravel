@@ -1,0 +1,17 @@
+
+.menu-mobile-navigation-hamburger{
+   @apply btn btn-ghost xl:hidden outline-none hover:bg-transparent -ml-2;
+}
+.menu-mobile-navigation-list{
+   @apply menu menu-sm mt-6 z-[1] p-2 shadow rounded-md left-[2px] right-[2px] !fixed top-[88px] rounded-t-none bg-white;   
+   li > *:not(ul):not(details):active{
+      @apply bg-primary
+   }
+   li > *:not(ul):not(details):hover{
+      @apply bg-primary text-white
+  }
+  :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)){
+      @apply !rounded-md py-3
+  }
+}
+

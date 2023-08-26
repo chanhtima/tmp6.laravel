@@ -1,0 +1,23 @@
+
+.home-title{
+  @apply text-24 md:text-32  xl:text-36 font-semibold ;
+}
+
+main{
+  min-height: calc(100vh - 584px);
+  @screen sm{
+      min-height: calc(100vh - 684px)
+  }
+  @screen md{
+      min-height: calc(100vh - 640px)
+  }
+  @screen lg{
+      min-height: calc(100vh - 501px)
+  }
+  @screen xl{
+      min-height: calc(100vh - 515px)
+  }
+  @screen 2xl{
+      min-height: calc(100vh - 451px)
+  }
+}

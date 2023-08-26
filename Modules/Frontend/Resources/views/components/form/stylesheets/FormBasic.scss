@@ -1,0 +1,54 @@
+.co-form-basic{
+  &-form{
+    @apply flex flex-wrap  justify-between -mx-2;
+  }
+  &-inputs{
+    @apply flex flex-col p-2 ;
+    label{
+        @apply font-semibold mb-2;
+    }
+    input{
+        @apply py-4 pl-4 rounded-xl shadow-md;
+    }
+    textarea {
+        @apply py-4 pl-4 rounded-xl shadow-md;
+    }
+  }
+  &-pdpa{
+    @apply p-2;
+    label{
+        @apply label cursor-pointer justify-normal items-start sm:items-center;  
+        input{
+            @apply checkbox-primary h-5 w-5 pt-5 sm:pt-0;
+        }
+        span{
+            @apply label-text pl-2 text-16 ;
+        }
+        a{
+            @apply sm:ml-2   border-b border-black break-words;
+        }
+    }
+    img{
+        @apply pt-2;
+    }
+  }
+  &-buttons{
+    @apply flex items-center justify-center bg-primary py-3 px-6 mt-4 rounded-full min-w-[160px];
+    span{
+      @apply mr-2;
+    }
+  &-img{
+      @apply relative left-0 transition-all duration-200 mt-[1px];
+      svg{
+          @apply w-[12px] h-[14px];
+      }
+  }
+  &:hover{
+      .co-form-basic-buttons-img{
+          @apply left-2;
+          
+      }
+  }
+  }
+
+}

@@ -1,0 +1,17 @@
+.co-button-icon-l{
+
+    a{
+        @apply flex items-center justify-center
+    }
+    &-img{
+        @apply relative left-0 transition-all duration-200 mt-[1px] mr-3;
+        img{
+            @apply w-8;
+        }
+    }
+    &:hover{
+        .co-button-icon-l-img{
+            @apply right-2;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.co-breadcrumbs-basic{
+    &-wrapper{
+        @apply flex items-center space-x-2;
+    }
+    &-back{
+        @apply h-5 w-5 sm:hidden;
+        +p{
+            @apply sm:!ml-0;
+        }
+    }
+    &-active{
+        @apply pointer-events-none opacity-50;
+    }
+    &-item{
+        @apply flex items-center space-x-2;
+        svg{
+            @apply mt-[1px]
+        }
+        &:not(.co-breadcrumbs-basic-responsive){
+            @apply hidden sm:flex;
+        }
+        &:last-child{
+            @apply sm:max-w-[170px] lg:max-w-[330px] sm:line-clamp-1
+        }
+    }
+    &-chevron{
+        @apply hidden sm:block;
+    }
+}

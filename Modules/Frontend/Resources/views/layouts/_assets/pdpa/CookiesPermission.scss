@@ -1,0 +1,33 @@
+.cookies-wrapper{
+    @apply fixed bottom-3 border border-gray-200 border-opacity-25 left-0 right-0 md:translate-x-0  bg-white flex justify-center flex-col md:flex-row shadow-md w-11/12 sm:w-10/12 lg:w-9/12 mx-auto rounded-lg;
+    z-index: 1041;
+    &.d-none{
+      display: none;
+    }
+  } 
+  .cookies-text{
+    @apply p-4 pr-8 sm:p-8 sm:pb-6 md:p-5 ;
+    span{
+        @apply line-clamp-3
+    }
+  }
+  .cookies-action{
+    @apply flex items-center justify-center pb-4 md:pb-0 pr-4;
+    @screen md{
+      width: 220px;
+      flex: 0 0 220px;
+    }
+  }
+  .cookies-accept{
+    @apply border border-transparent rounded-full md:mr-4 px-12 py-2 text-white hover:text-black bg-primary text-16 cursor-pointer hover:bg-transparent hover:border-primary transition-all;
+    white-space: nowrap;
+  }
+  .cookies-denied{
+      @apply cursor-pointer absolute md:relative;
+      svg path{
+        stroke:#000000
+      }
+      @screen <md{
+          @apply top-3 right-3 
+    }  
+  } 

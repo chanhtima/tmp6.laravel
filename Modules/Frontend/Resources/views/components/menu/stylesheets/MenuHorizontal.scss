@@ -1,0 +1,9 @@
+.co-menu-horizontal{
+    @apply menu menu-horizontal px-1 text-16 2xl:text-18 ;
+    li a:active,li summary:active{
+        @apply border-b-primary border-b-2 !bg-transparent rounded-none;
+    }
+    li a,li summary{
+        @apply px-3
+    }
+}

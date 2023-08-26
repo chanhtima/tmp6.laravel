@@ -1,0 +1,19 @@
+.co-language-toggle-switch{
+    @apply bg-primary relative w-[4.15rem] border-slate-200 ;
+    &:before{
+        content: 'EN';
+        @apply absolute top-1/2 -translate-y-1/2 left-[7px] text-white text-14
+    }
+    &:after{
+        content: 'TH';
+        @apply absolute top-1/2 -translate-y-1/2 right-[8px] text-primary font-medium text-14
+    }
+    &:checked{
+        &:before{
+            @apply text-primary font-medium
+        }
+        &:after{
+            @apply text-white
+        }
+    }
+}

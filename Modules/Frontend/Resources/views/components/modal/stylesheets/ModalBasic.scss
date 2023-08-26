@@ -1,0 +1,7 @@
+.modal:not(dialog:not(.modal-open)), .modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.modal .btn-close-modal{
+    z-index: 9;
+    color: #000000;
+}

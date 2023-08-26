@@ -1,0 +1,47 @@
+.co-pagination-basic {
+    li,a {
+        border-radius: 50%;
+    }
+  }
+  
+  .co-pagination-basic {
+    @apply flex flex-wrap justify-center items-center;
+    li {
+        @apply mx-1;
+      a {
+        @apply flex flex-wrap justify-center items-center border border-[#ccc];
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      min-width: 38px; 
+      min-height: 38px;
+      transition: all .25s;
+    }
+  
+    li {
+      &:not([class*="current"]) a:hover {
+        @apply bg-primary border-transparent text-white;
+      }
+  
+      &.current a {
+        color: rgba(255, 255, 255, 1);
+        cursor: default;
+        pointer-events: none;
+        @apply bg-primary border-0;
+      }
+  
+      &:first-child, &:last-child {
+        @apply bg-transparent;
+      }
+    }
+    @screen <md{
+      li{
+        @apply mx-2;
+        &:not(.current):not(:first-child):not(:last-child){
+            @apply hidden
+        }
+      }
+    }
+  }

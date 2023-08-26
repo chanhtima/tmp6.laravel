@@ -1,0 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+html .co-scroll-to-top {
+    transition: all 0.3s;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    height: 9px;
+    opacity: 0;
+    padding: 10px 10px 35px;
+    position: fixed;
+    @apply rounded-full right-[16px] lg:right-[30px] bottom-[35px] lg:bottom-[47px] text-primary;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1040;
+    font-size: 0.8em;
+    
+
+    img {
+        width: 40px;
+        @apply shadow-lg
+    }
+}
+
+html .co-scroll-to-top {
+    opacity: 0;
+    visibility: hidden;
+}
+
+html .co-scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+html .co-scroll-to-top span {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+html.lightbox-opened .co-scroll-to-top {
+    right: 27px;
+}
+
+html.ie11 .co-scroll-to-top {
+    right: 25px;
+}
+
+@media (max-width: 991px) {
+    html .co-scroll-to-top.hidden-mobile {
+        display: none !important;
+    }
+}

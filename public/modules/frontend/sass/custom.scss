@@ -1,0 +1,15 @@
+
+
+
+  @media (min-width: 1400px){
+.container {
+    max-width: 1260px;
+    padding: 0 2.5rem;
+}
+}
+
+.btn:focus-visible {
+  outline-style: none;
+  outline-width: 2px;
+  outline-offset: 2px;
+}

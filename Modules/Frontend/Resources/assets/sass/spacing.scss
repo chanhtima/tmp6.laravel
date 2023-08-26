@@ -1,0 +1,17 @@
+.margin-wide-l{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @screen lg {
+      margin-left: calc((100vw - 960px) / 2);
+    }
+    @screen xl {
+      margin-left: calc((100vw - 1140px) / 2);
+    }
+    @screen 2xl {
+      margin-left: calc((100vw - 1320px) / 2);
+    }
+}
+
+.margin-title-bottom{
+    @apply mb-5 lg:mb-[150px];
+}

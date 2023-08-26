@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    html{
+        overflow-x: hidden;
+        font-size: 16px;
+        font-family: 'Kanit', sans-serif;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@layer components{
+}
+@layer utilities{
+
+}
+

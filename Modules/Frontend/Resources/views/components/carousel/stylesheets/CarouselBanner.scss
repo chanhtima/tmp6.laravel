@@ -1,0 +1,15 @@
+.co-carousel-banner{
+    &-item{
+        @apply md:aspect-w-16 md:aspect-h-6 aspect-h-1 aspect-w-1 ;
+        img{
+            @apply object-cover w-full h-full object-top;
+        }
+        a{
+            @apply z-[9]
+        }
+    }
+    &-cover{
+        @apply w-full h-full object-cover
+    }
+}
+

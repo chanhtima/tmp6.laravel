@@ -1,0 +1,35 @@
+.slider-Product-details{
+    .co-carousel-multi-item{
+        @apply   aspect-1 ;
+        img{
+            @apply object-cover w-full h-full rounded-lg ;
+        }
+        a{
+            @apply z-[9]
+        }
+    }
+   
+}
+
+.slider-Produc-Thumbnails{
+    @apply mt-2 px-8;
+    .co-carousel-multi-item{
+        @apply aspect-h-1 aspect-w-1 ;
+        img{
+            @apply object-cover w-full h-full rounded-lg;
+        }
+        a{
+            @apply z-[9]
+        }
+    }
+    .splide__track--nav>.splide__list>.splide__slide.is-active{
+        @apply border-primary rounded-lg;
+    }
+    .splide__arrow--prev {
+        left: 0;
+    }
+    .splide__arrow--next {
+        right: 0;
+    }
+   
+}

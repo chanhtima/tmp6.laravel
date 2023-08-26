@@ -1,0 +1,44 @@
+.la-footer-01-basic{
+  @apply bg-primary pb-4 pt-10 lg:pt-14;
+  &-footertop{
+   @apply lg:flex justify-between  pt-4;
+   h2{
+      @apply  mb-2;
+   }
+   &-logo{
+      @apply w-full lg:w-1/5;
+   img{
+      @apply w-20 lg:mt-6 ;
+   }
+   
+ 
+      
+   }
+   &-contact{
+      @apply w-full lg:w-2/5 xl:w-1/5 mt-4 lg:pl-[9rem] xl:pl-0 lg:mt-0  ;
+     
+   }
+   
+   &-widths{
+      @apply w-full lg:w-2/5 lg:mr-[-7rem] xl:mr-0 mt-4 lg:mt-0 ;
+      h2{
+         @apply  mb-2 text-start;
+      }
+       &-icon{
+         @apply flex items-center mr-4 mb-3;
+        
+       }
+      
+   }
+  }
+}
+
+.la-footer-01-copyright {
+   @apply  md:flex justify-between text-center py-2  ;
+   &-left{
+       @apply mb-2 md:mb-0;
+   }
+   &-icon{
+       @apply flex items-center justify-center mb-2 sm:mb-0;
+   }
+}

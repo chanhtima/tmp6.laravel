@@ -1,0 +1,12 @@
+.la-topbar-01-basic{
+  @apply bg-primary;
+  &-cotnainer{
+    @apply xl:container ;
+    &-icon{
+        @apply flex items-center py-3 px-2 sm:px-4 justify-end ;
+        a{
+            @apply ml-4;
+        }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.co-card-01-curved{
+    @apply relative overflow-hidden rounded-t-lg rounded-b-[2rem] aspect-w-3 aspect-h-4 shadow-lg;
+}
+.co-card-01-curved{
+    &-img{
+        @apply w-full h-full; 
+        a{
+
+        }
+        img{
+            @apply h-full sm:h-5/6 w-full object-cover;
+        }
+    }
+    &-detail{
+        @apply  top-[initial] h-auto bg-white p-6 pt-8  pl-12 flex flex-col justify-around   ;
+        border-radius: 6.3125rem 0rem 2rem 2rem;
+    }
+    &-title{
+        @apply line-clamp-1 text-18 font-semibold break-words;
+    }
+    &-subtitle{
+        @apply line-clamp-2 break-words;
+    }
+}
